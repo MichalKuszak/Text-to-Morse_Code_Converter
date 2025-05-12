@@ -13,6 +13,7 @@ while True:
             if char in MORSE_DICT:
                 string = string.replace(char, f"{MORSE_DICT[char]} ")
             else:
+                print(f"Character {char} not translated into Morse Code!")
                 continue
         print(string)
     else:
